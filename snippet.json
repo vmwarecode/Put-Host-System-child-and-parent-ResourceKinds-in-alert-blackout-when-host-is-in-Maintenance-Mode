@@ -1,0 +1,3 @@
+Count(${adaptertype=VMWARE, objecttype=Hostsystem, depth=-2, attribute=runtime|maintenanceState, where = "!contains notInMaintenance"}) || Count(${adaptertype=VMWARE, objecttype=Hostsystem, depth=-1, attribute=runtime|maintenanceState, where = "!contains notInMaintenance"})
+ 
+Count(${adaptertype=VMWARE, objecttype=Hostsystem, depth=1, attribute=runtime|maintenanceState, where = "!contains notInMaintenance"})
